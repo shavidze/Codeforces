@@ -1,0 +1,124 @@
+#include <iostream>
+#include <algorithm>
+#include <string>
+#include <vector>
+#include <cstdio>
+#include <cstdlib>
+#include <cmath>
+#include <algorithm>
+#include <queue>
+#include <map>
+#include <set>
+#include <iostream>
+#include <sstream>
+#include <stack>
+#include <cassert>
+#include <fstream>
+#include <cstring>
+#include <numeric>
+#include <ctype.h>
+#include <stdio.h>
+#define MOD 100000000   
+#define exit return 0
+#define inf 10000000000
+#define exit return 0
+#define PS system("pause")
+#define S 100007
+#define mx(a,b) a>b?a:b
+#define R0(i,n) for (i = 0; i < n; i++)
+#define R1(i,n) for (i = 1; i <= n; i++)
+#define MS(a,x) memset(x, a, sizeof(x));
+#define left (v<<1)
+#define right (left|1)
+#define mid ((tl+tr)>>1)
+#define SZ(x) ((int)x.size())
+#define MX(a,b)a>b?a:b
+const double eps = 1e-10;
+
+
+using namespace std;
+using ll = long long;
+using ul = unsigned long long;
+using PII = pair<int, int>;
+const int NN = 10000001;
+//vector<set<int>>gr(NN);
+//int cc[NN], ff[NN];
+//int dp[211][2][11][11];
+int n, n1, k1, k2, k;
+int m, s, x, c, d, a, e, q;
+int dd;
+string s1, s2;
+inline int gcd(int a, int b){
+	while (a > 0 && b > 0){
+		if (a > b){
+			a %= b;
+		}
+		else {
+			b %= a;
+		}
+	}
+	return a + b;
+}
+int main(){
+
+	cin >> s1 >> s2;
+
+	int ss = min(s1.size(), s2.size());
+	if (s1.size() > s2.size())swap(s1, s2);
+	vector<int>div;
+	div.push_back(1);
+	for (int i = 2; i*i <= ss; i++){
+		if (ss%i == 0){
+			div.push_back(i);
+			if (ss / i != i){
+				div.push_back(ss / i);
+			}
+		}
+	}
+
+	div.push_back(ss);
+	set<string>dif;
+	vector<string>div1, div2;
+	for (int i = 0; i < div.size(); i++){
+		int fi = div[i];
+		string pp = s1.substr(0, fi);
+		for (int j = 0; j < s1.size(); j += fi){
+			dif.insert(s1.substr(j, fi));
+		}
+		if (dif.size() == 1){
+			div1.push_back(pp);
+		}
+		dif.clear();
+	}
+	int sse = min(s1.size(), s2.size());
+	dif.clear();
+	for (int i = 0; i < div.size(); i++){
+		int fi = div[i];
+		string pp = s2.substr(0, fi);
+		for (int j = 0; j < s2.size(); j += fi){
+			dif.insert(s2.substr(j, fi));
+		}
+		if (dif.size() == 1){
+			div2.push_back(pp);
+		}
+		dif.clear();
+	}
+	set<string>vv1, vv2;
+	for (auto x : div1)vv1.insert(x);
+	for (auto x : div2)vv2.insert(x);
+
+	int answww = 0;
+	for (auto x : vv1){
+		for (auto y : vv2){
+			if (x == y)answww++;
+		}
+	}
+	printf("%d\n", answww);
+	exit;
+
+
+
+
+}
+
+
