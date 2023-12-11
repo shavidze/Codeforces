@@ -35,7 +35,6 @@
 #define MX(a,b)a>b?a:b
 const double eps = 1e-10;
 
-
 using namespace std;
 using ll = long long;
 using ul = unsigned long long;
@@ -63,15 +62,14 @@ void pref(string ss){
 	}
 }
 
-
 int main(){
-
 	cin >> in;
 	pp.resize(in.length());
 	b = in.length();
 	pref(in);
 	int ff = pp[b - 1];
 	string done = in.substr(0, ff);
+
 	if (ff == 0){
 		printf("Just a legend");
 		exit;
@@ -83,6 +81,7 @@ int main(){
 			exit;
 		}
 	}
+	
 	ff = pp[ff - 1];
 	if (ff == 0){
 		printf("Just a legend");
