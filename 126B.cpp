@@ -46,6 +46,7 @@ int tmp[NN];
 int n, m, k, s, x, y, z, c, d, a, b, e, q, answww = 0;
 vector<int>pp;
 
+
 void pref(string ss){
 	pp.resize(ss.length());
 	int xx = 0;
