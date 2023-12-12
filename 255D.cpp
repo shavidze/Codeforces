@@ -75,18 +75,7 @@ int main(){
 		//add(dp[i + 1][SUM]);
 
 	}
-
-
-
 	cout << pas;
 
-
-
-	//PS;
-
 	return 0;
-
-
-
-
 }
