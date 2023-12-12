@@ -92,10 +92,6 @@ int main(){
 	string 	done1 = in.substr(0, ff);
 	cout << done1 << endl;
 	exit;
-
-
-
-
 }
 
 
