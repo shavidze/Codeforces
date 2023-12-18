@@ -44,6 +44,8 @@ map<int, int>mp;
 int used[N];
 double maxWays;
 int dp[(1 << 22) + 1];
+
+
 int main(){
 	for (int i = 1; i < (1 << 22); i++)dp[i] = -1;
     scanf("%d",&n);
