@@ -39,6 +39,7 @@ const double eps = 1e-10;
 using namespace std;
 
 int n, i, j, k, l, m, a, b;
+
 bool gr[20][20], H[20][20];
 int low[1 << 20]; ll dp[1 << 20][20];
 int mask;
