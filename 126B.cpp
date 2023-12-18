@@ -41,6 +41,7 @@ using ul = unsigned long long;
 using PII = pair<int, int>;
 const int NN = 300011;
 string in;
+
 int dp[NN];
 int tmp[NN];
 int n, m, k, s, x, y, z, c, d, a, b, e, q, answww = 0;
