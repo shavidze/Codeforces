@@ -35,7 +35,6 @@
 #define MX(a,b)a>b?a:b
 const double eps = 1e-10;
 
-
 using namespace std;
 //using ll = long long;
 using ul = unsigned long long;
