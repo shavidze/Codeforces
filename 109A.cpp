@@ -51,6 +51,7 @@ int answw = 1111111;
 
 int f1 = -1;
 int f2 = -1;
+
 int main(){
 
 	scanf("%d", &n);
