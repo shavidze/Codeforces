@@ -64,6 +64,7 @@ bool lucky(int x){
 	return 1;
 }
 ll pas;
+
 int main(){
 	cin >> n >> k;
 	for (int i = 0; i < n; i++)cin >> in[i];
