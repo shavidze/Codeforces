@@ -42,7 +42,7 @@ vector<int>gr[N];
 int car[N][N];
 int dp[N / 10][N / 10];
 
-//
+
 int f[N / 10][N / 10][N / 10];
 int over;
 int main(){
