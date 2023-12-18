@@ -48,13 +48,7 @@ int dst[N];
 double was[N][N];
 int go[N], en[N];
 double maxWays;
-//void dfs(int v, int p = -1){
-//	for (auto &x : gr[v]){
-//		if (x != p){
-//
-//		}
-//	}
-//}
+
 int main(){
 	cin >> n >> m;
 	R1(i, n) R1(j, n) d[i][j] = 5555;
