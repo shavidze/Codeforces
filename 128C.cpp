@@ -33,6 +33,7 @@
 #define SZ(x) ((int)x.size())
 #define MX(a,b)a>b?a:b
 const double eps = 1e-10;
+
 #define rep(i, n) for (int i = 0; i < n; i++)
 
 using namespace std;
